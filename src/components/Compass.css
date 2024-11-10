@@ -1,5 +1,4 @@
-/* Compass.css */
-
+/* Main Compass Container */
 .compass {
   padding: 0;
 }
@@ -17,16 +16,19 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* TechMaster Heading */
+/* Heading Style */
 .techmaster-heading {
   font-family: 'Copperplate Gothic Light', serif;
-  color: #CCF8FF; /* TechMaster Compass heading color */
+  color: #CCF8FF;
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 20px;
+  overflow-wrap: break-word; /* Allows wrapping within the word */
+  word-break: break-all; /* Breaks long words if needed */
+  padding: 0 10px; /* Padding to prevent cutting */
+  white-space: normal; /* Ensures text wraps on smaller screens */
 }
 
-/* Body Text Styling */
 .compass-text p {
   font-family: Candara, sans-serif;
   font-size: 1.1rem;
@@ -37,28 +39,55 @@
 
 /* Custom Text Colors */
 .text-blue {
-  color: #7F7F7F; /* Tech word color */
+  color: #7F7F7F;
 }
 
 .text-red {
-  color: #C00000; /* M font color */
+  color: #C00000;
 }
 
 .text-white {
-  color: #FFFFFF; /* Remaining text color */
+  color: #FFFFFF;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+  /* For tablets and medium screens */
   .techmaster-heading {
-    font-size: 2rem; /* Adjust font size for small screens */
+    font-size: 2.2rem;
+    padding: 0 8px; /* Add padding for tablet */
   }
 
   .compass-text p {
-    font-size: 1rem; /* Adjust paragraph font size for small screens */
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* For small screens (e.g., mobile) */
+  .techmaster-heading {
+    font-size: 1.8rem;
+    padding: 0 5px; /* Reduce padding for smaller screens */
+    text-align: center; /* Center-align for small screens */
   }
 
-  .compass-icon {
-    width: 90%; /* Scale image for mobile */
+  .compass-text p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  /* For very small screens (e.g., extra small mobile) */
+  .techmaster-heading {
+    font-size: 1.5rem;
+    padding: 0 5px; /* Ensure enough padding on very small screens */
+    text-align: center;
+  }
+
+  .compass-text p {
+    font-size: 0.85rem;
+    padding: 0 10px;
+    text-align: center;
   }
 }

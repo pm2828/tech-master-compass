@@ -9,7 +9,7 @@ const TextNavigation = () => {
         <li><Link to="/">Astra</Link></li>
         <li><Link to="/">AHC</Link></li>
         <li><Link to="/">RMD</Link></li>
-        <li><Link to="/">Outage Oracle</Link></li>
+        <li><Link to="/">Associate</Link></li>
         <li><Link to="/">ACART</Link></li>
         <li><Link to="/">AISHA</Link></li>
         <li><Link to="/">FAA1</Link></li>

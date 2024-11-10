@@ -15,6 +15,8 @@
     border-radius: 10px 0 0 10px; /* Rounded left corners */
     box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2); /* Shadow on the right side */
   }
+  /* Responsive Design */
+
   
   .text-navigation ul {
     list-style: none;
@@ -41,7 +43,12 @@
     background-color: #444; /* Darker background on hover */
     border-radius: 5px; /* Rounded corners on hover */
   }
-  
+  @media (max-width: 768px){
+    .text-navigation {
+      padding: 10px;
+    }
+    }
+
   .text-navigation a svg {
     margin-right: 10px; /* Space between icon and text */
   }
@@ -53,4 +60,3 @@
   .text-navigation li:last-child {
     margin-bottom: 30px; /* Add bottom spacing */
   }
-  

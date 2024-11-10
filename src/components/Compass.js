@@ -25,7 +25,8 @@ function Compass() {
         <Col md={6} className="compass-text">
           <h2 className="techmaster-heading">{styleText('Tech M aster Compass')}</h2>
           <p>{styleText('Tech M aster Compass is your go-to platform, providing a comprehensive suite of insights from Dashboards, Application Health Checks, and Automation Statistics.')}</p>
-          <p>{styleText('It also offers Tech M aster Compass self-help tools to search historical Production Support incidents, ensuring efficient management and resolution of current incidents.')}</p>
+          <p>{styleText('It also offers  Compass self-help tools to search historical Production Support incidents, ensuring efficient management and resolution of current incidents.')}</p>
+          <p>{styleText('Navigate your IT landscape with clarity and precision using Tech M aster Compass ')}</p>
         </Col>
       </Row>
     </Container>
