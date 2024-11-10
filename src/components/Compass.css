@@ -1,0 +1,57 @@
+
+
+.compass-row {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.compass-image-container {
+  padding: 20px;
+}
+
+.compass-icon {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Right Section: Text */
+.compass-text {
+  color: #FFFFFF; /* Text color as per your requirement */
+  font-family: Candara, sans-serif;
+  padding: 20px;
+}
+
+/* Heading Style */
+.techmaster-heading {
+  font-family: 'Copperplate Gothic Light', serif;
+  color: #CCF8FF; /* Heading color */
+  font-size: 36px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* Paragraphs: Text Content */
+.compass-description {
+  color: #CCF8FF; /* Text color */
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+/* Responsive Design: Mobile adjustments */
+@media (max-width: 768px) {
+  .compass-text {
+    padding: 15px;
+  }
+
+  .techmaster-heading {
+    font-size: 30px;
+  }
+
+  .compass-description {
+    font-size: 16px;
+  }
+}

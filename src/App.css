@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+/* App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body, #root, .app {
+  height: 100%;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .app {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh; */
+
+
+/* .main-layout {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+} */
+
+.menu-button {
+  position: fixed;
+  top: 10px;
+  left: -20px;
+  background: none;
   color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
 }
 
-.App-link {
-  color: #61dafb;
+.menu-button:focus {
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Sidebar navigation */
+/* .navigation {
+  background-color: #333;
+  width: 250px; /* Set fixed width for the sidebar */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 999; /* Ensure it's above other elements */
+*/
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation li {
+  margin: 10px 0;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  color: #ddd;
+}
+
+/* Content area */
+.content {
+  flex-grow: 1;
+  margin-left: 250px; /* Offset by sidebar width */
+  padding: 20px;
+   background-color: #072a6c; 
+  color: white;
+  overflow-y: auto;
+}
+
+.content.with-sidebar {
+  margin-left: 100px; /* Offset by sidebar width */
+}
+/* App.css */
+.app {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.main-layout {
+  display: flex;
+  width: 100%;
+}
+
+.navigation {
+  /* width: 100px; Set a width for the sidebar
+  background-color: #333; */
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+.content {
+  margin-left: 200px; /* Offset content by the width of the sidebar */
+  padding: 20px;
+  width: 100%;
+}
+
+/* Styling for the menu button */
+.menu-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
 }

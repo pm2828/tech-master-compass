@@ -1,0 +1,53 @@
+/* Navigation.css */
+
+.navigation {
+  width: 100px; /* Set a width for the sidebar */
+  background-color:#072a6c; /* Dark background for the sidebar */
+  color: white;
+  position: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding-top: 50px;
+  z-index: 1;
+  border-radius: 10px 0 0 10px; /* Rounded left corners */
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2); /* Shadow on the right side */
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation li {
+  margin: 15px 0;
+  padding: 10px;
+  text-align: right;
+}
+
+.navigation a {
+  color: #FFD700; /* White text color */
+  font-size: 1.1em; /* Slightly larger font size */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.navigation a:hover {
+  color: #ffd700; /* Gold color on hover */
+  background-color: #444; /* Darker background on hover */
+  border-radius: 5px; /* Rounded corners on hover */
+}
+
+.navigation a svg {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.navigation li:first-child {
+  margin-top: 30px; /* Add spacing to the top */
+}
+
+.navigation li:last-child {
+  margin-bottom: 30px; /* Add bottom spacing */
+}
