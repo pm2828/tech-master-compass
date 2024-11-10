@@ -1,57 +1,64 @@
+/* Compass.css */
 
-
-.compass-row {
-  height: 100vh;
-  display: flex;
-  align-items: center;
+.compass {
+  padding: 0;
 }
 
 .compass-image-container {
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .compass-icon {
   max-width: 100%;
   height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Right Section: Text */
-.compass-text {
-  color: #FFFFFF; /* Text color as per your requirement */
-  font-family: Candara, sans-serif;
-  padding: 20px;
-}
-
-/* Heading Style */
+/* TechMaster Heading */
 .techmaster-heading {
   font-family: 'Copperplate Gothic Light', serif;
-  color: #CCF8FF; /* Heading color */
-  font-size: 36px;
+  color: #CCF8FF; /* TechMaster Compass heading color */
+  font-size: 2.5rem;
   font-weight: bold;
-  text-align: left;
   margin-bottom: 20px;
 }
 
-/* Paragraphs: Text Content */
-.compass-description {
-  color: #CCF8FF; /* Text color */
-  font-size: 18px;
+/* Body Text Styling */
+.compass-text p {
+  font-family: Candara, sans-serif;
+  font-size: 1.1rem;
+  color: #CCF8FF;
   line-height: 1.6;
-  text-align: left;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
-/* Responsive Design: Mobile adjustments */
+/* Custom Text Colors */
+.text-blue {
+  color: #7F7F7F; /* Tech word color */
+}
+
+.text-red {
+  color: #C00000; /* M font color */
+}
+
+.text-white {
+  color: #FFFFFF; /* Remaining text color */
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  .compass-text {
-    padding: 15px;
-  }
-
   .techmaster-heading {
-    font-size: 30px;
+    font-size: 2rem; /* Adjust font size for small screens */
   }
 
-  .compass-description {
-    font-size: 16px;
+  .compass-text p {
+    font-size: 1rem; /* Adjust paragraph font size for small screens */
+  }
+
+  .compass-icon {
+    width: 90%; /* Scale image for mobile */
   }
 }

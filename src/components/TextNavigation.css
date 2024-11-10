@@ -1,9 +1,11 @@
 /* TextNavigation.css */
 
 .text-navigation {
+    font-family: 'Posterama', sans-serif;
+    font-weight: bold;
+    color: #BFBFBF;
     width: 200px; /* Set a width for the sidebar */
     background-color: #072a6c; /* Dark background for the sidebar */
-    color: #FFD700;
     position: fixed;
     top: 0;
     left: 0;
@@ -27,7 +29,7 @@
   }
   
   .text-navigation a {
-    color: #ffd700; /* White text color */
+    color: #BFBFBF; /* White text color */
     font-size: 1.1em; /* Slightly larger font size */
     text-decoration: none;
     display: flex;
