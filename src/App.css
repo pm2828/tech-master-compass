@@ -24,7 +24,7 @@ html, body, #root, .app {
 } */
 
 .menu-button {
-  position: fixed;
+  position: sticky;
   top: 10px;
   left: -20px;
   background: none;
@@ -39,18 +39,6 @@ html, body, #root, .app {
   outline: none;
 }
 
-/* Sidebar navigation */
-/* .navigation {
-  background-color: #333;
-  width: 250px; /* Set fixed width for the sidebar */
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  padding: 20px;
-  overflow-y: auto;
-  z-index: 999; /* Ensure it's above other elements */
-*/
 
 .navigation ul {
   list-style: none;

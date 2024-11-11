@@ -1,54 +1,126 @@
-/* Navigation.css */
-
-.navigation {
-  width: 100px; /* Set a width for the sidebar */
-  background-color:#072a6c; /* Dark background for the sidebar */
-  color: white;
-  position: center;
+/* Main Sidebar Navigation */
+.text-navigation {
+  font-family: 'Posterama', sans-serif;
+  font-weight: bold;
+  color: #BFBFBF;
+  width: 200px; /* Sidebar width */
+  background-color: #072a6c;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   padding-top: 50px;
   z-index: 1;
-  border-radius: 10px 0 0 10px; /* Rounded left corners */
-  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2); /* Shadow on the right side */
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+  overflow: auto;
 }
 
-.navigation ul {
+/* Basic Styles for List Items */
+.text-navigation ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-
-.navigation li {
+.text-navigation li {
   margin: 15px 0;
   padding: 10px;
-  text-align: right;
+  position: relative;
 }
 
-.navigation a {
-  color: #BFBFBF; /* White text color */
-  font-size: 1.1em; /* Slightly larger font size */
+/* Consistent Icon Styling */
+.text-navigation .icon {
+  font-size: 1.4rem; /* Same size for all icons */
+  color: #BFBFBF; /* Consistent icon color */
+  background: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon hover effect */
+.text-navigation .icon:hover {
+  color: #ffd700; /* Icon color on hover */
+}
+
+/* Link Styling */
+.text-navigation a {
+  color: inherit;
+  font-size: 1.1em;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.text-navigation a:hover {
+  color: #ffd700;
+  background-color: #072a6c;
+  border-radius: 5px;
+}
+
+/* Dropdown Styles */
+.text-navigation .dropdown {
   display: flex;
   align-items: center;
 }
 
-.navigation a:hover {
-  color: #ffd700; /* Gold color on hover */
-  background-color: #444; /* Darker background on hover */
-  border-radius: 5px; /* Rounded corners on hover */
+.text-navigation .dropdown-icon {
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 0.8em;
 }
 
-.navigation a svg {
-  margin-right: 10px; /* Space between icon and text */
+/* Sub-list Styling */
+.text-navigation .sub-list {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
-.navigation li:first-child {
-  margin-top: 30px; /* Add spacing to the top */
+.text-navigation .sub-list li {
+  padding: 5px 0;
 }
 
-.navigation li:last-child {
-  margin-bottom: 30px; /* Add bottom spacing */
+.text-navigation .sub-list a {
+  color: #BFBFBF;
+  font-size: 0.95em;
+}
+
+.text-navigation .sub-list a:hover {
+  color: #ffd700;
+}
+
+/* Adjustments for Mobile */
+@media (max-width: 768px) {
+  .text-navigation {
+    width: 150px;
+  }
+
+  .text-navigation a {
+    font-size: 1em;
+  }
+}
+
+/* Style the button to look like a link */
+.text-navigation .dropdown-button {
+  font-weight: bold;
+  background: none;
+  border: none;
+  color: #BFBFBF;
+  font-size: 1.1em;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.text-navigation .dropdown-button:hover {
+  color: #ffd700;
+  background-color: #072a6c;
+  border-radius: 5px;
+}
+
+.text-navigation .dropdown-button:focus {
+  outline: none;
 }
